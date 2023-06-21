@@ -14,7 +14,6 @@ include(Catch)
 add_executable(libcurves-demo_test source/libcurves-demo_test.cpp)
 target_link_libraries(
     libcurves-demo_test PRIVATE
-    libcurves-demo_lib
     Catch2::Catch2WithMain
 )
 target_compile_features(libcurves-demo_test PRIVATE cxx_std_20)
