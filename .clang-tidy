@@ -10,7 +10,7 @@ Checks: "*,\
   -llvm-header-guard,\
   -llvm-include-order,\
   -llvmlibc-*,\
-  -modernize-use-nodiscard,\
+  -modernize-*,\
   -misc-non-private-member-variables-in-classes"
 WarningsAsErrors: ''
 CheckOptions:
@@ -69,7 +69,7 @@ CheckOptions:
   - key: 'readability-identifier-naming.ConstexprMethodCase'
     value: 'lower_case'
   - key: 'readability-identifier-naming.ConstexprVariableCase'
-    value: 'lower_case'
+    value: 'CamelCase'
   - key: 'readability-identifier-naming.EnumCase'
     value: 'lower_case'
   - key: 'readability-identifier-naming.EnumConstantCase'
