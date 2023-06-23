@@ -87,7 +87,7 @@ auto main() -> int
   // Compute the total sum of radii of all curves in the second container
   double sum_of_radii = 0;
   {
-    #pragma omp parallel for
+#pragma omp parallel for
     for (auto it = circles.begin(); it != circles.end(); ++it) {
       sum_of_radii += (*it)->get_radii_sum();
     }
