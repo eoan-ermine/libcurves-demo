@@ -24,6 +24,9 @@ target_compile_features(libcurves-demo_exe PRIVATE cxx_std_20)
 find_package(libcurves REQUIRED)
 target_link_libraries(libcurves-demo_exe INTERFACE libcurves::libcurves)
 
+find_package(OpenMP REQUIRED)
+target_link_libraries(libcurves-demo_exe PUBLIC OpenMP::OpenMP_CXX)
+
 # ---- Install rules ----
 
 if(NOT CMAKE_SKIP_INSTALL_RULES)
