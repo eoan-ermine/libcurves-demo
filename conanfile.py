@@ -9,7 +9,7 @@ class Recipe(ConanFile):
         self.folders.generators = "conan"
 
     def requirements(self):
-        pass
+        self.requires("libcurves/0.1.0")
 
     def build_requirements(self):
         self.test_requires("catch2/3.3.1")

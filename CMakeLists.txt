@@ -21,6 +21,9 @@ set_property(TARGET libcurves-demo_exe PROPERTY OUTPUT_NAME libcurves-demo)
 
 target_compile_features(libcurves-demo_exe PRIVATE cxx_std_20)
 
+find_package(libcurves REQUIRED)
+target_link_libraries(libcurves-demo_exe INTERFACE libcurves::libcurves)
+
 # ---- Install rules ----
 
 if(NOT CMAKE_SKIP_INSTALL_RULES)

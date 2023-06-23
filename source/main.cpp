@@ -4,7 +4,7 @@
 #include <random>
 #include <vector>
 
-#include <libcurves-0.1.0/libcurves/libcurves.hpp>
+#include <libcurves/libcurves.hpp>
 
 constexpr auto MIN_OBJECTS = 1, MAX_OBJECTS = 10;
 constexpr auto MIN_RADIUS = 1, MAX_RADIUS = 1000;
